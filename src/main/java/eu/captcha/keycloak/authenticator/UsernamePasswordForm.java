@@ -80,8 +80,6 @@ public class UsernamePasswordForm extends AbstractUsernameFormAuthenticator impl
 
         String rememberMeUsername = AuthenticationManager.getRememberMeUsername(context.getSession());
 
-        addCaptcha(context);
-
         if (context.getUser() != null) {
             LoginFormsProvider form = context.form();
             form.setAttribute(LoginFormsProvider.USERNAME_HIDDEN, true);
